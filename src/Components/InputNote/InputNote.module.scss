@@ -1,0 +1,35 @@
+$inputFieldColor : #11000C;
+
+.InputField{
+ padding: 1rem 1rem;
+ background-color: $inputFieldColor;
+ color: white;
+ border: none;
+ width: 60vw;
+ max-width: 400px;
+ font-size: 1.2rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+.Icon{
+    color: white;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.IconText{
+    color: white;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+
+.Span{
+  display: flex;
+  background-color: $inputFieldColor;
+  justify-content: space-evenly;
+  align-items: center;
+}
