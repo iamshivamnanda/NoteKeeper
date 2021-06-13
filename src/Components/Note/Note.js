@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from "./Note.module.scss";
-import { Delete ,CheckCircle ,Favorite,FavoriteBorder,CheckCircleOutlineOutlined ,Remove } from '@material-ui/icons';
+import { Delete ,CheckCircle ,Favorite,FavoriteBorder,CheckCircleOutlineOutlined  } from '@material-ui/icons';
 
 
 class Note extends Component{
@@ -16,7 +16,7 @@ class Note extends Component{
             <p>{noteInfo.txt} </p>
             </div>
             {noteInfo.delete ?<span className={classes.DeleteIcon} onClick={()=>this.props.completedRemoveNote(noteInfo.id)}>
-            <Remove  />
+            <Delete  />
             </span> :
             <React.Fragment>
             <span className={classes.DeleteIcon} onClick={()=>  this.props.delNote(noteInfo.id)}>
