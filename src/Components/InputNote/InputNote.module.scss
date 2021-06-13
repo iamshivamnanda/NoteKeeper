@@ -5,9 +5,29 @@ $inputFieldColor : #11000C;
  background-color: $inputFieldColor;
  color: white;
  border: none;
- width: 60vw;
- max-width: 400px;
+ width: 100%;
  font-size: 1.2rem;
+ border-radius: 15px;
+
+}
+
+.InputField:focus{
+  height: 8rem;
+
+}
+
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  .SaveBttn{
+    color:white;
+}
+.SaveBttn:hover{
+    color: #ccc;
+}
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -16,12 +36,10 @@ $inputFieldColor : #11000C;
   }
   
 .Icon{
-    color: white;
     font-size: 2rem;
     vertical-align: middle;
 }
 .IconText{
-    color: white;
     font-size: 1rem;
     vertical-align: middle;
 }
@@ -29,7 +47,11 @@ $inputFieldColor : #11000C;
 
 .Span{
   display: flex;
+  border-radius: 10px;
+
   background-color: $inputFieldColor;
-  justify-content: space-evenly;
+  justify-content: stretch;
   align-items: center;
+  width: 60vw;
+ max-width: 600px;
 }

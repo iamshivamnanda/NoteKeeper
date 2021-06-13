@@ -1,13 +1,27 @@
 .SideNavigation{
     width: 70vw;
+    max-width: 400px;
     height: 100vh;
     background-color: #441133;
     z-index: 100;
     position: fixed;
     display: flex;
     flex-direction: column;    
-    justify-content: flex-start;
+    justify-content: center;
+
+    
+    span{
+        color: white;
+    }
+    span:hover{
+        color:#ccc;
+    }
+ 
+   a{
+       text-decoration: none;
+   }
 }
+
 
 .Show{
     display:flex;
@@ -18,13 +32,19 @@
 }
 
 .Icon{
-    color: white;
     font-size: 3.5rem;
     vertical-align: middle;
 }
 
 .IconText{
-    color: white;
     font-size: 1.5rem;
     vertical-align: middle;
+}
+
+.Copyright{
+    position: absolute;
+    font-size: 1rem;
+    bottom: 10px;
+    align-self: center;
+   
 }

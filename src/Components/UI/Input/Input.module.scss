@@ -1,0 +1,40 @@
+.Input {
+    width: 100%;
+    padding: 2px 1rem;
+    box-sizing: border-box;
+}
+
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    outline: none;
+    border-color: #441133;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    font-size: large;
+    color: white;
+    background-color: #441133;
+}
+
+.InputElement:focus {
+    outline: none;
+    background-color: #441133;
+}
+
+.Invalid {
+    border: 1px solid red;
+    background-color: rgb(243, 167, 159);
+}

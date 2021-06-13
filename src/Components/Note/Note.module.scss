@@ -1,6 +1,9 @@
 .Note{
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     height: 10rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    // overflow: hidden;
     max-height: 200px;
     border-radius: 20px;
     width: 80vw;
@@ -8,5 +11,56 @@
     background-color: #093119;
     text-align: left;
     padding: 1rem 1.5rem;
+    padding-bottom: 1.5rem;
     box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+
+    .DeleteIcon{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        display: none;
+    }
+    .DeleteIcon:hover{
+        color: red;
+    }
+    .DoneIcon{
+        position: absolute;
+        top:-5px;
+        right: -5px;
+        display: none;
+    }
+    .DoneIcon:hover{
+        color: red;
+    }
+    .FavoriteIcon{
+        position: absolute;
+        bottom:10px;
+        left: 25px;
+        display: none;
+    }
+    .FavoriteIcon:hover{
+        color: red;
+    }
+
+    .Text{
+        overflow: hidden;
+      
+        height: 7rem;
+    }
+
+}
+
+.Note:hover{
+    .DeleteIcon{
+        display: block;
+    }
+    .DoneIcon{
+        display: block;
+    }
+
+    .FavoriteIcon{
+        display: block;
+    }
 }

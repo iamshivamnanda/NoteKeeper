@@ -1,0 +1,81 @@
+.NoteModal{
+    width:70vw;
+    border-radius: 20px;
+    max-width: 600px;
+    height: 70vh;
+    max-height: 500px;
+    background-color: white;
+    z-index: 30;
+    position: fixed;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+
+}
+
+.Note{
+    margin: 1rem 1rem;
+    height: 85%;
+    width: 90%;
+    word-wrap: break-word;
+    word-break: break-all;
+    // overflow: hidden;
+    border-radius: 20px;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    padding-bottom: 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 560px;
+   
+
+   
+    .DeleteIcon:hover{
+        color: red;
+    }
+  
+    .DoneIcon:hover{
+        color: red;
+    }
+   
+    .FavoriteIcon:hover{
+        color: red;
+    }
+
+    .SaveIcon:hover{
+        color: red;
+    }
+
+    .Text{
+        overflow: hidden;
+    
+    
+        textarea{
+            box-sizing: border-box; /* fit parent width */
+  height: 40vh;
+  width: 100%;
+  border: none;
+  color: white;
+        }
+
+        textarea:focus, textarea:focus-visible{
+            border: none;
+            outline: none;
+        }
+    
+    }
+
+}
+
+.Icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
